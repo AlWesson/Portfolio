@@ -60,6 +60,16 @@ p {
     font-weight: bold;
     
 }
+.project {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(213, 189, 126);
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+
 @media screen and (max-width: 895px){
     header, main {
     flex-direction: column;
