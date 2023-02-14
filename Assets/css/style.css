@@ -45,7 +45,9 @@ nav a:hover{
 }
 article h2{
     font-size: 20px;
-    color:rgb(91, 98, 42)
+    color:rgb(91, 98, 42);
+    margin-top: 1%;
+    
 }
 article div {
     margin:5px 0 5px 0;
@@ -53,7 +55,10 @@ article div {
     border: 3px solid rgb(213, 189, 126);
 }
 p {
-    color:rgb(91, 98, 42)
+    color:rgb(91, 98, 42);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
 }
 @media screen and (max-width: 895px){
     header, main {
