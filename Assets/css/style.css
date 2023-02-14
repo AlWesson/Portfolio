@@ -1,9 +1,10 @@
 
+/* pseudo class to enable body flex  display and columns.*/
 body {
     display: flex;
     flex-direction: column;
 }
-
+/* pseudo class for header enabling flex, and adjustments to header format.*/
 header {
     display: flex;
     justify-content:space-evenly;
@@ -13,7 +14,7 @@ header {
     
 }
 
-
+/* Adjustments to header text. */
 h1 {
     
     font-variant-caps:all-petite-caps;
@@ -22,44 +23,66 @@ h1 {
     color:rgb(91, 98, 42);
     font-size: 45px;
 }
-.Name {
+
+/* specific adjustments to my name and follows h1 on page.*/
+h1::after {
+    margin-left: 30px;
+    content: 'Albert Hernandez';
     font-style: italic;
     font-family:'Courier New', Courier, monospace;
     font-size: 55px;
     color: rgb(213, 189, 126);
-   
+    
 }
 
+/* Having my name diplay only in the header of the page.*/
+h2 {
+    display: none;
+}
+
+/* adjustments to all of nav block in header. */
 nav ul{
     display: flex;
     justify-content: space-between;
     min-width: 300px;
 }
+
+/* Adjustments to anchor tags' apearence */
 nav a {
     color:rgb(91, 98, 42);
     font-weight: bold;
     text-decoration: none;
 }
+
+/* changes color of the anchor tags when mouse hovers over them. */
 nav a:hover{
     color:coral;
 }
-article h2{
+
+/* h3 font, color, and margin within articles. */
+article h3{
     font-size: 20px;
     color:rgb(91, 98, 42);
     margin-top: 1%;
     
 }
+
+/* adds a border in the same color as my name to divs within articles. */
 article div {
     margin:5px 0 5px 0;
     padding: 5px;
     border: 3px solid rgb(213, 189, 126);
 }
+
+/* adjusting paragraph text to match the color of all other text besides name. */
 p {
     color:rgb(91, 98, 42);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     
 }
+
+/* border in the same color as h2 name added to all images and headers within each .project class. */
 .project {
     border-style: solid;
     border-width: 2px;
@@ -70,11 +93,14 @@ p {
     box-shadow: 10px 10px 5px #aaaaaa;
     
 }
+
 .project > img {
     width: 100%;
 }
+
+/* adjusting images to take up less screen space and adding padding. */
 .p-image{
-    flex: 1;
+    
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
