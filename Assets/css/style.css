@@ -67,6 +67,17 @@ p {
     padding: 10px;
     flex: 0 0 300px;
     margin: 20px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    
+}
+.project > img {
+    width: 100%;
+}
+.p-image{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
