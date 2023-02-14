@@ -26,12 +26,13 @@ h1 {
 
 /* specific adjustments to my name and follows h1 on page.*/
 h1::after {
-    margin-left: 30px;
+    margin-left: 40px;
     content: 'Albert Hernandez';
     font-style: italic;
     font-family:'Courier New', Courier, monospace;
     font-size: 55px;
     color: rgb(213, 189, 126);
+
     
 }
 
@@ -57,6 +58,7 @@ nav a {
 /* changes color of the anchor tags when mouse hovers over them. */
 nav a:hover{
     color:coral;
+
 }
 
 /* h3 font, color, and margin within articles. */
@@ -70,8 +72,9 @@ article h3{
 /* adds a border in the same color as my name to divs within articles. */
 article div {
     margin:5px 0 5px 0;
-    padding: 5px;
-    border: 3px solid rgb(213, 189, 126);
+    padding: 20px;
+    border: solid rgb(213, 189, 126);
+    border-width: 3px;
 }
 
 /* adjusting paragraph text to match the color of all other text besides name. */
@@ -82,31 +85,40 @@ p {
     
 }
 
-/* border in the same color as h2 name added to all images and headers within each .project class. */
+/* border in the same color as h2 name added around each .project class. */
 .project {
     border-style: solid;
     border-width: 2px;
     border-color: rgb(213, 189, 126);
     padding: 10px;
     flex: 0 0 300px;
-    margin: 20px;
+    margin: 20px 0 auto 0;
     box-shadow: 10px 10px 5px #aaaaaa;
-    
+    transition: all 0.3s ease-in-out;
 }
 
 .project > img {
     width: 100%;
 }
 
-/* adjusting images to take up less screen space and adding padding. */
+/* adjusting image spacing */
 .p-image{
-    
-    padding: 10px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
+
 }
 
+/* I got the idea for this effect from Week 2: activity 28. */
+.project:hover{
+    box-shadow: 1px 1px 1px #aaaaaa;
+    flex: 0 0 297px;
+}
+
+
+/* adjust the layout of the page according to window size. */
 @media screen and (max-width: 895px){
     header, main {
     flex-direction: column;
