@@ -18,6 +18,7 @@ header {
     
 }
 
+
 /* Adjustments to header text. */
 h1 {
     
@@ -70,12 +71,13 @@ article h3{
     font-size: 20px;
     color:rgb(91, 98, 42);
     margin-top: 1%;
+    padding-left: 5%;
     
 }
 
 /* adds a border in the same color as my name to divs within articles. */
 article div {
-    margin:5px 0 5px 0;
+    margin:5px 5px 25px 5px;
     padding: 20px;
     border: solid rgb(213, 189, 126);
     border-width: 3px;
@@ -86,6 +88,7 @@ p {
     color:rgb(91, 98, 42);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    padding: 2%;
     
 }
 
@@ -116,6 +119,12 @@ p {
     
 
 }
+div img {
+    max-height: 400px;
+
+    
+
+}
 
 /* I got the idea for effects from Week 2: activity 28. I experimented with a few things, but ended up liking the "push-down" effect from the transform and box-shadow minimizing.*/
 .project:hover{
@@ -129,10 +138,12 @@ p {
     margin-right: 35px;
 
 }
-
+.contacts li a{
+    color:rgb(91, 98, 42);
+}
 /* adjust the layout of the page according to window size. */
 @media screen and (max-width: 895px){
-    header, main {
+    header, body, main {
     flex-direction: column;
   }
     
