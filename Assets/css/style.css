@@ -117,12 +117,18 @@ p {
 
 }
 
-/* I got the idea for effects from Week 2: activity 28. I experimented with a few things, but ended up liking the "push-down" effect.*/
+/* I got the idea for effects from Week 2: activity 28. I experimented with a few things, but ended up liking the "push-down" effect from the transform and box-shadow minimizing.*/
 .project:hover{
     box-shadow: 1px 1px 1px #aaaaaa;
     transform: scale(0.98);
 }
+.contacts li{
+    font-weight: bolder;
+    color:rgb(91, 98, 42);
+    display: inline;
+    margin-right: 35px;
 
+}
 
 /* adjust the layout of the page according to window size. */
 @media screen and (max-width: 895px){
