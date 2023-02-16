@@ -114,15 +114,16 @@ p {
 
 }
 
+
 /* adjusting image spacing */
-.p-image{
-    
+.p-image {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     flex-direction: row;
-    
 }
+
+
 
 .self img{ 
     
@@ -140,6 +141,7 @@ p {
     box-shadow: 1px 1px 1px #aaaaaa;
     transform: scale(0.98);
 }
+
 .contacts li{
     font-weight: bolder;
     color:var(--color-two);
