@@ -11,7 +11,7 @@ body {
 /* pseudo class for header enabling flex, and adjustments to header format.*/
 header {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--color-three);
     padding: 1%;
@@ -78,7 +78,6 @@ article h3{
 /* adds a border in the same color as my name to divs within articles. */
 article div {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     background-color:beige ;
     margin:5px 5px 25px 5px;
@@ -99,17 +98,17 @@ p {
     
 }
 
-/* adjusting image spacing */
+/* image spacing and adjusting with flex. */
 .p-image {
-    display: flex; /* I will try grid here."*/
+    display: flex; 
+    flex-wrap: wrap;
     align-items: flex-start;
-    
-    
+    justify-content:space-evenly;
     
 }
 /* border in the same color as h2 name added around each .project class. */
 .project {
-    align-self: flex-end;
+    
     border-style: solid;
     border-width: 2px;
     border-color: var(--color-one);
@@ -121,7 +120,8 @@ p {
 }
 /* more image control. */
 .project img {
-    max-width: 300px;
+    width: 300px;
+    height: 350px;
 }
 
 
@@ -140,7 +140,7 @@ p {
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 .project-1 img {
-    max-width: 500px;
+    max-width: 700px;
     
 
 }
