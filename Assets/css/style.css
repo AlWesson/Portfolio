@@ -117,10 +117,11 @@ p {
 
 /* adjusting image spacing */
 .p-image {
-    display: flex;
+    display: grid; /* I will try grid here."*/
     flex-wrap: wrap;
     justify-content:space-evenly;
     flex-direction: row;
+    width: 100%;
 }
 
 
