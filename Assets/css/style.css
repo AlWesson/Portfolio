@@ -77,6 +77,9 @@ article h3{
 
 /* adds a border in the same color as my name to divs within articles. */
 article div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     background-color:beige ;
     margin:5px 5px 25px 5px;
     padding: 20px;
@@ -87,58 +90,80 @@ article div {
 
 /* adjusting paragraph text to match the color of all other text besides name. */
 p {
+    align-self: center;
     color:var(--color-two);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     padding: 2%;
     
+    
 }
 
+/* adjusting image spacing */
+.p-image {
+    display: flex; /* I will try grid here."*/
+    align-items: flex-start;
+    
+    
+    
+}
 /* border in the same color as h2 name added around each .project class. */
 .project {
-    
+    align-self: flex-end;
     border-style: solid;
     border-width: 2px;
     border-color: var(--color-one);
     background-color: whitesmoke;
     padding: 10px;
-    flex: 0 0 300px;
-    margin: 20px 0 auto 0;
-    box-shadow: 10px 10px 5px #aaaaaa;
     
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 2%;
 }
 /* more image control. */
 .project img {
-    width: 300px;
-    height: auto;
-
+    max-width: 300px;
 }
 
 
-/* adjusting image spacing */
-.p-image {
-    display: grid; /* I will try grid here."*/
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    flex-direction: row;
-    width: 100%;
+
+
+/* Making the first work bigger than the rest. */
+.project-1 {
+    
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-one);
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 2%;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
+.project-1 img {
+    max-width: 500px;
+    
 
-
+}
 
 .self img{ 
     
-    max-width: 270px;  
+    align-self: center; 
+    max-width: 300px;
     border-style: dotted;
     border-width: 5px;
     border-color:var(--color-one);;
     padding: 1%;
+    margin-left: 1%;
     background-color: whitesmoke;
 
 }
 
 /* I got the idea for effects from Week 2: activity 28. I experimented with a few things, but ended up liking the "push-down" effect from the transform and box-shadow minimizing.*/
 .project:hover{
+    box-shadow: 1px 1px 1px #aaaaaa;
+    transform: scale(0.98);
+}
+.project-1:hover{
     box-shadow: 1px 1px 1px #aaaaaa;
     transform: scale(0.98);
 }
