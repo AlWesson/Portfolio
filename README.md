@@ -4,19 +4,15 @@ The portfolio of Albert Hernandez.
 
 ## Description
 
-This is a portfolio used for showing my sharing about myself, sharing my work, and how to contact me.
+Hello, visitors! This here is my repository leading to my portfolio page. Please make yourself at home, and come back any time!
 
-## Installation
+## Portfolio Link
 
-N/A
+https://alwesson.github.io/Portfolio-Albert-Hernandez/
 
 ## Usage
 
 For admiring my work, and to see if my talents are a right fit for your needs.
-
-## Credits
-
-N/A
 
 ## License 
 
